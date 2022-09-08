@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+body header {
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    position: absolute;
+    box-sizing: border-box;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.mobile-logo {
+    display: none;
+}
+
+header nav a {
+    color: hsl(208, 11%, 55%);
+    text-decoration: none;
+    padding: 1rem 3rem;
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.main-section {
+    min-height: 100vh;
+    padding: 7rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    background-color: hsl(193, 100%, 96%);
+    background-image: url(./huddle-landing-page-with-alternating-feature-blocks-master/huddle-landing-page-with-alternating-feature-blocks-master/images/bg-hero-desktop.svg);
+}
+
+.main-section-content {
+    width: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main h1 {
+    color: hsl(192, 100%, 9%);
+    font-size: 2.5rem;
+}
+
+.main-section a {
+    color: white;
+    background-color: hsl(322, 100%, 66%);
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 40px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+section .main-section-img {
+    width: 40rem;
+    height: 28rem;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./huddle-landing-page-with-alternating-feature-blocks-master/huddle-landing-page-with-alternating-feature-blocks-master/images/illustration-mockups.svg);
+}
+
+@media (max-width: 1350px) {
+    .main-section {
+        min-height: 100vh;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 5rem 2rem;
+    }
+    .main-section-content {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    body header {
+        padding: 1rem 2rem;
+    }
+    .desktop-logo {
+        display: none;
+    }
+    .mobile-logo {
+        display: inline;
+    }
+    .main-section {
+        min-height: 100vh;
+    }
+    section .main-section-img {
+        width: 20rem;
+        height: 15rem;
+    }
+}
+
+@media (max-width: 481px) {
+    .mobile-logo {
+        display: inline;
+    }
+}
