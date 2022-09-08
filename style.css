@@ -32,7 +32,7 @@ header nav a {
 
 .main-section {
     min-height: 100vh;
-    padding: 7rem 2rem;
+    padding: 7rem 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,6 +53,10 @@ main h1 {
     font-size: 2.5rem;
 }
 
+main p {
+    color: hsl(208, 11%, 55%);
+}
+
 .main-section a {
     color: white;
     background-color: hsl(322, 100%, 66%);
@@ -62,12 +66,51 @@ main h1 {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-section .main-section-img {
+.main-section-img {
     width: 40rem;
     height: 28rem;
     background-position: center;
     background-size: cover;
     background-image: url(./huddle-landing-page-with-alternating-feature-blocks-master/huddle-landing-page-with-alternating-feature-blocks-master/images/illustration-mockups.svg);
+}
+
+.list-section ul {
+    padding: 3rem 4rem;
+    margin: 2rem 0;
+}
+
+.list-section li {
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    border-radius: 1.5rem;
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+.list-section li article {
+    padding: 0 4rem;
+}
+
+.list-svg {
+    width: 40vw;
+    height: 20rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.grow {
+    background-image: url(./huddle-landing-page-with-alternating-feature-blocks-master/huddle-landing-page-with-alternating-feature-blocks-master/images/illustration-grow-together.svg);
+}
+
+.flow {
+    background-image: url(./huddle-landing-page-with-alternating-feature-blocks-master/huddle-landing-page-with-alternating-feature-blocks-master/images/illustration-flowing-conversation.svg);
+}
+
+.users {
+    background-image: url(./huddle-landing-page-with-alternating-feature-blocks-master/huddle-landing-page-with-alternating-feature-blocks-master/images/illustration-your-users.svg);
 }
 
 @media (max-width: 1350px) {
@@ -78,7 +121,7 @@ section .main-section-img {
         padding: 5rem 2rem;
     }
     .main-section-content {
-        width: 90%;
+        width: 100%;
         text-align: center;
     }
 }
@@ -100,6 +143,27 @@ section .main-section-img {
         width: 20rem;
         height: 15rem;
     }
+    .list-section ul {
+        padding: 0.5rem 1rem;
+    }
+    .list-section li article {
+        padding: 0 0.5rem;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .list-section li article p {
+        font-size: 0.75rem;
+    }
+    .list-section li {
+        flex-direction: column;
+    }
+    .list-section .reverse {
+        flex-direction: column-reverse;
+    }
+    .list-svg {
+        width: 100%;
+        background-size: contain;
+    }
 }
 
 @media (max-width: 481px) {
@@ -113,7 +177,7 @@ section .main-section-img {
         padding: 0.5rem 1.5rem;
     }
     .main-section-content {
-        width: 95%;
+        width: 100%;
         text-align: center;
     }
     main h1 {
@@ -125,5 +189,9 @@ section .main-section-img {
     section .main-section-img {
         width: 16rem;
         height: 11.8rem;
+    }
+    .list-svg {
+        width: 85vw;
+        background-size: contain;
     }
 }
