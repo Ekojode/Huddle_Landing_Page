@@ -45,7 +45,7 @@ header nav a {
     width: 35rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 main h1 {
@@ -83,7 +83,7 @@ section .main-section-img {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     body header {
         padding: 1rem 2rem;
     }
@@ -105,5 +105,25 @@ section .main-section-img {
 @media (max-width: 481px) {
     .mobile-logo {
         display: inline;
+    }
+    body header {
+        padding: 0.5rem 1rem;
+    }
+    header nav a {
+        padding: 0.5rem 1.5rem;
+    }
+    .main-section-content {
+        width: 95%;
+        text-align: center;
+    }
+    main h1 {
+        font-size: 1.5rem;
+    }
+    .main-section a {
+        padding: 0.5rem 1.5rem;
+    }
+    section .main-section-img {
+        width: 16rem;
+        height: 11.8rem;
     }
 }
