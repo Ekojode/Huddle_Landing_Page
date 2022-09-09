@@ -94,7 +94,7 @@ main p {
 }
 
 .list-svg {
-    width: 40vw;
+    width: 75vw;
     height: 20rem;
     background-size: contain;
     background-repeat: no-repeat;
@@ -111,6 +111,52 @@ main p {
 
 .users {
     background-image: url(./huddle-landing-page-with-alternating-feature-blocks-master/huddle-landing-page-with-alternating-feature-blocks-master/images/illustration-your-users.svg);
+}
+
+footer {
+    background-color: hsl(192, 100%, 9%);
+    color: whitesmoke;
+    padding: 2rem 4rem;
+}
+
+footer .footer-logo {
+    color: white;
+}
+
+.footer-logo path {
+    fill: white;
+}
+
+footer section {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem auto;
+}
+
+footer .footer-div {
+    width: 40vw;
+    display: flex;
+}
+
+.footer-div div {
+    margin: 1rem;
+}
+
+footer p {
+    margin: 1rem;
+}
+
+footer .icons {
+    margin: 0 0.5rem 1rem 0.5rem;
+    border-color: white;
+    border-width: 0.5px;
+    border-radius: 100%;
+    border-style: solid;
+    padding: 0.5rem;
+}
+
+footer .copyrights {
+    text-align: end;
 }
 
 @media (max-width: 1350px) {
