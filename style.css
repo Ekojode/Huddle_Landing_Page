@@ -119,10 +119,6 @@ footer {
     padding: 2rem 4rem;
 }
 
-footer .footer-logo {
-    color: white;
-}
-
 .footer-logo path {
     fill: white;
 }
@@ -210,6 +206,21 @@ footer .copyrights {
         width: 100%;
         background-size: contain;
     }
+    footer {
+        padding: 2rem 0.5rem;
+    }
+    footer section {
+        flex-direction: column;
+    }
+    footer .mobile-logo path {
+        fill: white;
+    }
+    footer .footer-div {
+        width: 90vw;
+    }
+    footer .icon-div {
+        text-align: center;
+    }
 }
 
 @media (max-width: 481px) {
@@ -239,5 +250,8 @@ footer .copyrights {
     .list-svg {
         width: 85vw;
         background-size: contain;
+    }
+    footer .mobile-logo path {
+        fill: white;
     }
 }
