@@ -30,6 +30,10 @@ header nav a {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+body main {
+    margin-bottom: 13.5vh;
+}
+
 .main-section {
     min-height: 100vh;
     padding: 7rem 4rem;
@@ -83,7 +87,7 @@ main p {
     min-height: 20vh;
     display: flex;
     align-items: center;
-    border-radius: 1.5rem;
+    border-radius: 32px;
     margin: 2rem 0;
     padding: 1rem 2rem;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
@@ -116,7 +120,34 @@ main p {
 footer {
     background-color: hsl(192, 100%, 9%);
     color: whitesmoke;
-    padding: 2rem 4rem;
+    padding: 2rem 4rem 2rem 4rem;
+}
+
+.call-to-action {
+    background-color: white;
+    min-height: 25vh;
+    width: 75vw;
+    display: flex;
+    margin: -12.5vh auto 1.5rem auto;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 32px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+.call-to-action h2 {
+    color: hsl(192, 100%, 9%);
+    margin-bottom: 4vh;
+}
+
+.call-to-action a {
+    color: white;
+    background-color: hsl(322, 100%, 66%);
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 40px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .footer-logo path {
@@ -209,6 +240,9 @@ footer .copyrights {
     footer {
         padding: 2rem 0.5rem;
     }
+    .call-to-action {
+        width: 90vw;
+    }
     footer section {
         flex-direction: column;
     }
@@ -250,6 +284,12 @@ footer .copyrights {
     .list-svg {
         width: 85vw;
         background-size: contain;
+    }
+    .call-to-action h2 {
+        font-size: 1.25rem;
+    }
+    .call-to-action a {
+        padding: 0.5rem 1.5rem;
     }
     footer .mobile-logo path {
         fill: white;
